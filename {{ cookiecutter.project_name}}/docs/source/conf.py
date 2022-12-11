@@ -20,9 +20,8 @@ import {{ cookiecutter.package_name }}  # pylint: disable=wrong-import-position
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 distro = distribution("{{ cookiecutter.package_name }}")
-
 project = distro.metadata['Name']
-project_copyright = "{{ cookiecutter.copyright_year }}" + ", " + f"{distro.metadata['Author']}"  
+project_copyright = f"{{ cookiecutter.copyright_year }}, {distro.metadata['Author']}"  
 author = distro.metadata['Author']
 # The full version, including alpha/beta/rc tags.
 release = distro.metadata['Version']
