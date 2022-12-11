@@ -7,7 +7,7 @@ keywords = {{ cookiecutter.keywords.split() }}
 name = "{{ cookiecutter.project_name }}"
 readme = "README.md"
 requires-python = ">=3.7"
-license = "{{ cookiecutter.license }}"
+license = { file = "LICENSE" }
 authors = [
     { name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.email }}" },
 ]

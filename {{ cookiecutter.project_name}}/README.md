@@ -35,6 +35,14 @@ You can install _{{cookiecutter.friendly_name}}_ via [pip] from [PyPI]:
 pip install {{cookiecutter.project_name}}
 ```
 
+```bash
+python3 -m virtualenv ./.venv
+source ./.venv/bin/activate
+pip3 install -U pip setuptools wheel
+
+
+```
+
 ## Usage
 
 Please see the [Command-line Reference] for details.
