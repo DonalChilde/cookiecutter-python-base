@@ -1,0 +1,105 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+keywords = {{ repr(cookiecutter.keywords.split()) }}
+name = "{{ cookiecutter.project_name }}"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "{{ cookiecutter.license }}"
+authors = [
+    { name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.email }}" },
+]
+classifiers = [
+    "{{ cookiecutter.development_status }}",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version", "description"]
+
+[project.scripts]
+{{ cookiecutter.project_name }} = "{{ cookiecutter.package_name }}.console:main"
+
+[project.urls]
+Documentation = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}#readme"
+Documentation_rtd = "https://{{ cookiecutter.project_name }}.readthedocs.io"
+Issues = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues"
+Source = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}"
+
+[project.dependencies]
+#
+[project.optional-dependencies]
+dev = [
+
+    # Automation
+    "nox",
+    "pre-commit",
+
+    # Linting and Formatting
+    "black",
+    "pylint",
+    "mypy",
+    # "doc8",
+
+    # Testing
+    "pytest",
+    "coverage",
+    "pytest-cov",
+
+    # Tools
+    "pysnooper",
+
+    # Vscode
+    "esbonio",
+    "rst2html",
+    "rstcheck",
+]
+doc = [
+    # Documentation
+    "Sphinx",
+    "sphinx-autobuild",
+    "sphinx-autodoc-typehints",
+    "sphinx_rtd_theme",
+    "myst-parser",
+]
+
+
+[tool.isort]
+profile = "black"
+src_paths = ["src", "test"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+# https://pylint.pycqa.org/en/latest/user_guide/usage/run.html#command-line-options
+# https://pylint.pycqa.org/en/latest/user_guide/configuration/all-options.html#standard-checkers
+# pylint --generate-toml-config > ./pylint-toml-example.toml
+# [tool.pylint.messages_control]
+# disable = [
+#     "raw-checker-failed",
+#     "bad-inline-option",
+#     "locally-disabled",
+#     "file-ignored",
+#     "suppressed-message",
+#     "useless-suppression",
+#     "deprecated-pragma",
+#     "use-symbolic-message-instead"
+# ]
+
+[tool.pylint.format]
+# for black compatability
+max-line-length = "95"
+
+
+[tool.coverage.run]
+branch = true
+parallel = true
+# omit = [""]
