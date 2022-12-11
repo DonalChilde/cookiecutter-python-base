@@ -39,6 +39,7 @@ pip install {{cookiecutter.project_name}}
 python3 -m virtualenv ./.venv
 source ./.venv/bin/activate
 pip3 install -U pip setuptools wheel
+pip3 install -e .[dev,doc]
 
 
 ```
