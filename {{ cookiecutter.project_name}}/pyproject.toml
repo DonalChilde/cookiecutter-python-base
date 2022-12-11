@@ -9,7 +9,8 @@ readme = "README.md"
 requires-python = ">=3.7"
 license = { file = "LICENSE" }
 authors = [
-    { name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.email }}" },
+    { name = "{{ cookiecutter.author }}" },
+    { email = "{{ cookiecutter.email }}" },
 ]
 classifiers = [
     "{{ cookiecutter.development_status }}",
