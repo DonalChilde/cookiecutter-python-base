@@ -12,7 +12,7 @@ nox.options.sessions = []
 @nox.session(name="docs-build", python=python_versions[0])
 def docs_build(session: nox.Session) -> None:
     """Build the documentation."""
-    args = session.posargs or ["docs", "docs/build"]
+    args = session.posargs or ["docs/source", "docs/build"]
     if not session.posargs and "FORCE_COLOR" in os.environ:
         args.insert(0, "--color")
 
@@ -29,7 +29,7 @@ def docs_build(session: nox.Session) -> None:
 @nox.session(python=python_versions[0])
 def docs(session: nox.Session) -> None:
     """Build and serve the documentation with live reloading on file changes."""
-    args = session.posargs or ["--open-browser", "docs", "docs/build"]
+    args = session.posargs or ["--open-browser", "docs/source", "docs/build"]
     session.install(".[doc]")
     # session.install("sphinx", "sphinx-autobuild", "sphinx-click", "furo", "myst-parser")
 
