@@ -6,3 +6,4 @@
 - implement github actions for ci
 - go over hyper modern for other features to copy.
 - implement read the docs and pypi releasing
+- click/argparse option, with docs.
