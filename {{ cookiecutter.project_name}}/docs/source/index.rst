@@ -11,6 +11,7 @@ Welcome to {{ cookiecutter.friendly_name }}'s documentation!
 
    readme
    installation
+   {{ cookiecutter.package_name }}_cli
    changelog
    contributing
    release_checklist
