@@ -24,7 +24,7 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version", "description"]
-dependencies = []
+dependencies = ["click"]
 
 [project.scripts]
 {{ cookiecutter.project_name }} = "{{ cookiecutter.package_name }}.{{ cookiecutter.package_name }}_cli:main"
