@@ -1,5 +1,4 @@
-{% raw %}
-name: Python package test
+{% raw %}name: Python package test
 
 on: [push]
 
