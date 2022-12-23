@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 keywords = {{ cookiecutter.keywords.split() }}
 name = "{{ cookiecutter.project_name }}"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
     { name = "{{ cookiecutter.author }}" },
