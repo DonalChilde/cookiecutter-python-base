@@ -45,23 +45,12 @@ dev = [
 
     # Linting and Formatting
     "black",
-    "pylint",
-    "mypy",
-    # "doc8",
-
-    # Testing
-    "pytest",
-    "coverage",
-    "pytest-cov",
+    "isort",
 
     # Tools
     "pysnooper",
-
-    # Vscode
-    "esbonio",
-    "rst2html",
-    "rstcheck",
 ]
+lint = ["pylint", "mypy"]
 doc = [
     # Documentation
     "Sphinx",
@@ -71,6 +60,8 @@ doc = [
     "myst-parser",
     "sphinx-click",
 ]
+vscode = ["esbonio", "rst2html", "rstcheck"]
+testing = ["pytest", "coverage", "pytest-cov"]
 
 
 [tool.isort]

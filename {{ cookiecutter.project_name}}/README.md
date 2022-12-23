@@ -35,13 +35,34 @@ You can install _{{cookiecutter.friendly_name}}_ via [pip] from [PyPI]:
 pip install {{cookiecutter.project_name}}
 ```
 
+### Developer Install
+
+#### Individual commands
+
 ```bash
+# From the project directory - 
 python3 -m virtualenv ./.venv
 source ./.venv/bin/activate
-pip3 install -U pip setuptools wheel
-pip3 install -e .[dev,doc]
+pip3 install -U pip, wheel
+pip3 install -e .[dev,lint,doc,vscode,testing]
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
+```
 
+#### Convenient one liners
 
+```bash
+python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip && pip3 install -e .[dev,lint,doc,vscode,testing]
+```
+
+```bash
+git init && git add . && git commit -m "initial commit"
+```
+
+```bash
+git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
 ```
 
 ## Usage
