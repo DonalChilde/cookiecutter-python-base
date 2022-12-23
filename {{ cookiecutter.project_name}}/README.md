@@ -60,7 +60,11 @@ python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUI
 ```
 
 ```bash
-git init && pre-commit install && pre-commit autoupdate && git add . && git commit -m "initial commit"
+git init && pre-commit install && pre-commit autoupdate
+```
+
+```bash
+git add . && git commit -m "initial commit"
 ```
 
 ```bash
