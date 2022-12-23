@@ -46,6 +46,8 @@ source ./.venv/bin/activate
 pip3 install -U pip, wheel
 pip3 install -e .[dev,lint,doc,vscode,testing]
 git init
+pre-commit install
+pre-commit autoupdate
 git add .
 git commit -m "initial commit"
 git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
@@ -58,7 +60,7 @@ python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUI
 ```
 
 ```bash
-git init && git add . && git commit -m "initial commit"
+git init && pre-commit install && pre-commit autoupdate && git add . && git commit -m "initial commit"
 ```
 
 ```bash
