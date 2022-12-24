@@ -1,5 +1,6 @@
 # {{ cookiecutter.friendly_name }}
 
+<!-- badges-begin -->
 [![PyPI](https://img.shields.io/pypi/v/{{cookiecutter.project_name}}.svg)][pypi status]
 [![Status](https://img.shields.io/pypi/status/{{cookiecutter.project_name}}.svg)][pypi status]
 [![Python Version](https://img.shields.io/pypi/pyversions/{{cookiecutter.project_name}})][pypi status]
@@ -19,6 +20,8 @@
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
 
+<!-- badges-end -->
+
 ## Features
 
 - TODO
@@ -27,7 +30,7 @@
 
 - TODO
 
-## Installation
+## Quickstart
 
 You can install _{{cookiecutter.friendly_name}}_ via [pip] from [PyPI]:
 
@@ -35,41 +38,15 @@ You can install _{{cookiecutter.friendly_name}}_ via [pip] from [PyPI]:
 pip install {{cookiecutter.project_name}}
 ```
 
-### Developer Install
+## Usage
 
-#### Individual commands
+Please see the [documentation] for details.
 
-```bash
-# From the project directory - 
-python3 -m virtualenv ./.venv
-source ./.venv/bin/activate
-pip3 install -U pip, wheel
-pip3 install -e .[dev,lint,doc,vscode,testing]
-git init
-pre-commit install
-pre-commit autoupdate
-git add .
-git commit -m "initial commit"
-git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
-```
+## Contributing
 
-#### Convenient one liners
+Contributions are very welcome.
+To learn more, see the [Contributor Guide].
 
-```bash
-python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip && pip3 install -e .[dev,lint,doc,vscode,testing]
-```
-
-```bash
-git init && pre-commit install && pre-commit autoupdate
-```
-
-```bash
-git add . && git commit -m "initial commit"
-```
-
-```bash
-git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
-```
 
 ## Usage
 
@@ -82,7 +59,7 @@ To learn more, see the [Contributor Guide].
 
 ## License
 
-Distributed under the terms of the [{{cookiecutter.license.replace("-", " ")}} license][license],
+Distributed under the terms of the [MIT license][license],
 _{{cookiecutter.friendly_name}}_ is free and open source software.
 
 ## Issues
@@ -90,18 +67,51 @@ _{{cookiecutter.friendly_name}}_ is free and open source software.
 If you encounter any problems,
 please [file an issue] along with a detailed description.
 
+## Developer Setup
+
+<!-- dev -->
+### Individual commands
+
+```bash
+# From the project directory - 
+python3 -m virtualenv ./.venv
+source ./.venv/bin/activate
+pip3 install -U pip, wheel
+pip3 install -e .[dev,lint,doc,vscode,testing]
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
+```
+
+### Convenient one liners
+
+```bash
+python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip && pip3 install -e .[dev,lint,doc,vscode,testing]
+```
+
+```bash
+git init && git add . && git commit -m "initial commit"
+```
+
+```bash
+git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
+```
+<!-- end-dev -->
 ## Credits
 
-<!-- This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
+This project was generated from [DonalChilde]'s [cookiecutter-python-base] template, which was inspired by [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
 
-[@cjolowicz]: https://github.com/cjolowicz -->
+[@cjolowicz]: https://github.com/cjolowicz
+[DonalChilde]: https://github.com/DonalChilde
 [pypi]: https://pypi.org/
-<!-- [hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python -->
+[hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+[cookiecutter-python-base]: https://github.com/DonalChilde/cookiecutter-python-base
 [file an issue]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/issues
 [pip]: https://pip.pypa.io/
 
 <!-- github-only -->
 
 [license]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/blob/main/LICENSE
-[contributor guide]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/blob/main/CONTRIBUTING.md
-[command-line reference]: https://{{cookiecutter.project_name}}.readthedocs.io/en/latest/usage.html
+[contributor guide]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/blob/main/CONTRIBUTING
+[documentation]: https://{{cookiecutter.project_name}}.readthedocs.io/en/latest/
