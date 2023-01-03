@@ -4,14 +4,6 @@ build-backend = "flit_core.buildapi"
 
 [project]
 keywords = {{ cookiecutter.keywords.split() }}
-name = "{{ cookiecutter.project_name }}"
-readme = "README.md"
-requires-python = ">=3.10"
-license = { file = "LICENSE" }
-authors = [
-    { name = "{{ cookiecutter.author }}" },
-    { email = "{{ cookiecutter.email }}" },
-]
 classifiers = [
     "{{ cookiecutter.development_status }}",
     "Programming Language :: Python",
@@ -22,6 +14,17 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
+{% if cookiecutter.license == 'MIT' %}
+    "License :: OSI Approved :: MIT License",
+{% endif %}
+]
+name = "{{ cookiecutter.project_name }}"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "{{ cookiecutter.author }}" },
+    { email = "{{ cookiecutter.email }}" },
 ]
 dynamic = ["version", "description"]
 dependencies = ["click"]
