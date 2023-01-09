@@ -1,4 +1,4 @@
-name: Release Drafter
+{% raw %}name: Release Drafter
 
 on:
   push:
@@ -39,3 +39,4 @@ jobs:
         #   disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+{% endraw %}
