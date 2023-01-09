@@ -1,4 +1,4 @@
-# .github/workflows/update-changelog.yaml
+{% raw %}# .github/workflows/update-changelog.yaml
 name: "Update Changelog"
 
 on:
@@ -41,3 +41,4 @@ jobs:
           branch: ${{ github.event.release.target_commitish }}
           commit_message: Update CHANGELOG
           file_pattern: CHANGELOG.md
+{%  endraw %}
