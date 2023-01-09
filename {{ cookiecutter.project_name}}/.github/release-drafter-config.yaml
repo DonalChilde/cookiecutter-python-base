@@ -1,0 +1,77 @@
+# categories:
+#   - title: ":boom: Breaking Changes"
+#     label: "breaking"
+#   - title: ":rocket: Features"
+#     label: "enhancement"
+#   - title: ":fire: Removals and Deprecations"
+#     label: "removal"
+#   - title: ":beetle: Fixes"
+#     label: "bug"
+#   - title: ":racehorse: Performance"
+#     label: "performance"
+#   - title: ":rotating_light: Testing"
+#     label: "testing"
+#   - title: ":construction_worker: Continuous Integration"
+#     label: "ci"
+#   - title: ":books: Documentation"
+#     label: "documentation"
+#   - title: ":hammer: Refactoring"
+#     label: "refactoring"
+#   - title: ":lipstick: Style"
+#     label: "style"
+#   - title: ":package: Dependencies"
+#     labels:
+#       - "dependencies"
+#       - "build"
+# template: |
+#   ## Changes
+
+#   $CHANGES
+ame-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+template: |
+  # What's Changed
+  $CHANGES
+
+change-template: "- $TITLE ([#$NUMBER](https://github.com/donalchilde/python-base-test-2/pull/$NUMBER))"
+
+categories:
+  - title: Added
+    labels:
+      - "changelog:added"
+  - title: Changed
+    labels:
+      - "changelog:changed"
+  - title: Deprecated
+    labels:
+      - "changelog:deprecated "
+  - title: Removed
+    labels:
+      - "changelog:removed"
+  - title: Fixed
+    labels:
+      - "changelog:fixed"
+  - title: Security
+    labels:
+      - security
+      - changelog:security
+  - title: "Dependency Updates"
+    labels:
+      - dependencies
+
+version-resolver:
+  major:
+    labels:
+      - "changelog:removed"
+  minor:
+    labels:
+      - "changelog:added"
+      - "changelog:deprecated"
+  patch:
+    labels:
+      - "changelog:fixed"
+      - "changelog:security"
+      - "dependency"
+
+exclude-labels:
+  - "skip-changelog"
