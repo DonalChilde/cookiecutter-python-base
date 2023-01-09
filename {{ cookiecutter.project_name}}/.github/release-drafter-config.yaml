@@ -33,7 +33,7 @@ template: |
   # What's Changed
   $CHANGES
 
-change-template: "- $TITLE ([#$NUMBER](https://github.com/donalchilde/python-base-test-2/pull/$NUMBER))"
+change-template: "- $TITLE ([#$NUMBER](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/pull/$NUMBER))"
 
 categories:
   - title: Added
