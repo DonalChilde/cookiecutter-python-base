@@ -1,10 +1,12 @@
-name: Labeler
+name: Labeler_manual
 
-on:
-  push:
-    branches:
-      - main
-      - master
+# on:
+#   push:
+#     branches:
+#       - main
+#       - master
+
+on: workflow_dispatch
 
 jobs:
   labeler:
@@ -17,4 +19,5 @@ jobs:
         uses: crazy-max/ghaction-github-labeler@v4.0.0
         with:
           skip-delete: true
-          yaml-file: .github/labels.yaml
+          # yaml-file: .github/labels.yaml
+          yaml-file: .github/changelog-labels.yaml
