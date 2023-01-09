@@ -2,6 +2,6 @@
 
 ## [Unreleased]
 
-## v0.0.0 - {{ now|datetimeformat("%y-%m-%d") }}
+## v0.0.0 - {% now 'utc', '%Y-%m-%d' %}
 
     Project Start
