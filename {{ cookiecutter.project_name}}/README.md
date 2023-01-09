@@ -81,7 +81,10 @@ pip3 install -e .[dev,lint,doc,vscode,testing]
 git init
 git add .
 git commit -m "initial commit"
+git tag -a v0.0.0 -m "initial commit tag"
 git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
+git push -u origin master
+git push origin v0.0.0
 ```
 
 ### Convenient one liners
@@ -91,11 +94,11 @@ python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUI
 ```
 
 ```bash
-git init && git add . && git commit -m "initial commit"
+git init && git add . && git commit -m "initial commit" && git tag -a v0.0.0 -m "initial commit tag"
 ```
 
 ```bash
-git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
+git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git && git push -u origin master && git push origin v0.0.0
 ```
 <!-- end-dev -->
 ## Credits
