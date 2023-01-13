@@ -13,6 +13,8 @@ template: |
 
 change-template: "- $TITLE ([#$NUMBER]($URL))"
 category-template: "### $TITLE"
+exclude-labels:
+  - "changelog:skip"
 
 categories:
   - title: Added
@@ -32,25 +34,7 @@ categories:
       - "changelog:fixed"
   - title: Security
     labels:
-      - security
-      - changelog:security
+      - "changelog:security"
   - title: "Dependency Updates"
     labels:
-      - dependencies
-
-# version-resolver:
-#   major:
-#     labels:
-#       - "changelog:removed"
-#   minor:
-#     labels:
-#       - "changelog:added"
-#       - "changelog:deprecated"
-#   patch:
-#     labels:
-#       - "changelog:fixed"
-#       - "changelog:security"
-#       - "dependency"
-
-exclude-labels:
-  - "skip-changelog"
+      - "changelog:dependencies"
