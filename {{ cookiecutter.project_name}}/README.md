@@ -47,16 +47,6 @@ Please see the [documentation] for details.
 Contributions are very welcome.
 To learn more, see the [Contributor Guide].
 
-
-## Usage
-
-Please see the [Command-line Reference] for details.
-
-## Contributing
-
-Contributions are very welcome.
-To learn more, see the [Contributor Guide].
-
 ## License
 
 Distributed under the terms of the [MIT license][license],
@@ -67,40 +57,6 @@ _{{cookiecutter.friendly_name}}_ is free and open source software.
 If you encounter any problems,
 please [file an issue] along with a detailed description.
 
-## Developer Setup
-
-<!-- dev -->
-### Individual commands
-
-```bash
-# From the project directory - 
-python3 -m virtualenv ./.venv
-source ./.venv/bin/activate
-pip3 install -U pip, wheel
-pip3 install -e .[dev,lint,doc,vscode,testing]
-git init
-git add .
-git commit -m "initial commit"
-git tag -a v0.0.0 -m "initial commit tag"
-git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
-git push -u origin master
-git push origin v0.0.0
-```
-
-### Convenient one liners
-
-```bash
-python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip && pip3 install -e .[dev,lint,doc,vscode,testing]
-```
-
-```bash
-git init && git add . && git commit -m "initial commit" && git tag -a v0.0.0 -m "initial commit tag"
-```
-
-```bash
-git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git && git push -u origin master && git push origin v0.0.0
-```
-<!-- end-dev -->
 ## Credits
 
 This project was generated from [DonalChilde]'s [cookiecutter-python-base] template, which was inspired by [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
