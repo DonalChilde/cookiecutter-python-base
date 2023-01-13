@@ -8,26 +8,30 @@
 # Labels for the changelog
 # https://keepachangelog.com/en/1.0.0/
 - name: changelog:added
-  description: Added Features
+  description: Added
   color: bfd4f2
 - name: changelog:changed
-  description: Added Features
+  description: Changed
   color: bfd4f2
 - name: changelog:deprecated
-  description: Added Features
+  description: Deprecated
   color: bfd4f2
 - name: changelog:fixed
-  description: Added Features
+  description: Fixed
   color: bfd4f2
 - name: changelog:removed
-  description: Added Features
+  description: Removed
   color: bfd4f2
 - name: changelog:security
-  description: Added Features
+  description: Security
   color: bfd4f2
-- name: changelog:added
-  description: Added Features
+- name: changelog:dependencies
+  description: Dependency Updates
   color: bfd4f2
+- name: changelog:skip
+  description: Dont include in changelog or release notes
+  color: bfd4f2
+
 # Other Labels
 - name: breaking
   description: Breaking Changes
