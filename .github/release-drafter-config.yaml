@@ -5,7 +5,7 @@ name-template: "v$NEXT_PATCH_VERSION"
 tag-template: "v$NEXT_PATCH_VERSION"
 template: |
   ## [v$NEXT_PATCH_VERSION](https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$NEXT_PATCH_VERSION)
-  ### What's Changed
+  ### What's Changed in v$NEXT_PATCH_VERSION
 
   _Describe the changes here_
 
