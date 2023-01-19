@@ -61,7 +61,7 @@ doc = [
     "sphinx-click",
 ]
 vscode = ["esbonio", "rst2html", "rstcheck"]
-testing = ["pytest", "coverage", "pytest-cov"]
+testing = ["pytest", "coverage[toml]", "pytest-cov"]
 
 
 [tool.isort]
