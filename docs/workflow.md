@@ -23,7 +23,7 @@ Before a release, ensure all of the following are completed. This is usually sta
 - [ ] Coverage is acceptable.
 - [ ] Documentation is current.
 - [ ] Changelog fragments are current
-- [ ] Update version string in pyproject.toml
+- [ ] Update version string in changelog.d/scriv.ini
 - [ ] `scriv collect` to update changelog.
   - [ ] Do steps detailed in changelog comments.
 - [ ] pull request to merge into main/master.
