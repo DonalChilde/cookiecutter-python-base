@@ -2,7 +2,7 @@
 <!-- markdownlint-disable MD024 -->
 <!-- changelog-start -->
 
-## [Unreleased](https://github.com/DonalChilde/cookiecutter-python-base/v0.0.1...refs/heads/develop)
+## [Unreleased](https://github.com/DonalChilde/cookiecutter-python-base/v0.0.1...refs/heads/dev)
 <!-- Dont forget to:
     - Update the Unreleased compare version to latest release tag
     - Update compare/_previous_version_tag_ 
