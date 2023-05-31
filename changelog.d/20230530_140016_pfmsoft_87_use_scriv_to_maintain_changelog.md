@@ -39,10 +39,10 @@ issue link [#1](https://github.com/DonalChilde/cookiecutter-python-base/issues/1
 - Use scriv to manage the changelog.
 
   - Pull requests
-    - [#0](https://github.com/DonalChilde/cookiecutter-python-base/pull/0)
+    - [#88](https://github.com/DonalChilde/cookiecutter-python-base/pull/88)
 
   - closes
-    - [#0](https://github.com/DonalChilde/cookiecutter-python-base/issues/0)
+    - [#87](https://github.com/DonalChilde/cookiecutter-python-base/issues/87)
 
 <!--
 
