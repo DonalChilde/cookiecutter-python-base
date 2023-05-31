@@ -9,8 +9,10 @@ From the project directory:
 ### Individual commands
 
 ```bash
-# Setup a virtual environment 
-python3 -m virtualenv ./.venv
+# Setup a virtual environment
+# if using pyenv, pick your version
+pyenv shell 3.11
+python3 -m venv ./.venv
 source ./.venv/bin/activate
 export PIP_REQUIRE_VIRTUALENV=true
 pip3 install -U pip, wheel
@@ -23,18 +25,23 @@ pre-commit autoupdate
 # Make initial commit. You may have to repeat the add and commit commands if git hooks modify files.
 git add .
 git commit -m "initial commit"
-git tag -a v0.0.0 -m "initial commit tag"
+git tag -a 0.0.0 -m "initial commit tag"
 # Link local git repo to a separately created new GitHub project.
-git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git
+git remote add origin https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}.git
 git push -u origin master
-git push origin v0.0.0
+git push origin 0.0.0
+git branch dev
+git push -u origin dev
+git checkout dev
 ```
 
 ### Convenient one liners
 
 ```bash
+# Pick your python version using pyenv - optional
+pyenv shell 3.11
 # Create the virtual environment and install dependencies
-python3 -m virtualenv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip && pip3 install -e .[dev,lint,doc,vscode,testing]
+python3 -m venv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip && pip3 install -e .[dev,lint,doc,vscode,testing]
 ```
 
 ```bash
@@ -44,12 +51,12 @@ git init && pre-commit install && pre-commit autoupdate
 
 ```bash
 # Make initial commit. You may have to repeat this command if git hooks modify files
-git add . && git commit -m "initial commit" && git tag -a v0.0.0 -m "initial commit tag"
+git add . && git commit -m "initial commit" && git tag -a 0.0.0 -m "initial commit tag"
 ```
 
 ```bash
 # Link local git repo to a separately created new GitHub project.
-git remote add origin https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}.git && git push -u origin master && git push origin v0.0.0
+git remote add origin https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}.git && git push -u origin master && git push origin 0.0.0 && git branch dev && git push -u origin dev && git checkout dev
 ```
 
 ### GitHub setup

@@ -1,0 +1,25 @@
+<!--
+A new scriv changelog fragment.
+
+Uncomment the section that is right (remove the HTML comment wrapper).
+
+pull request link [#1](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/pull/1)
+issue link [#1](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues/1)
+-->
+{% raw %}
+{% for cat in config.categories -%}
+<!--
+
+### {{ cat }}
+
+- A bullet item for the {{ cat }} category.
+{% endraw %}
+    - Pull requests
+        - [#0](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/pull/0)
+
+    - closes
+        - [#0](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues/0)
+{% raw %}
+-->
+{% endfor -%}
+{% endraw %}
