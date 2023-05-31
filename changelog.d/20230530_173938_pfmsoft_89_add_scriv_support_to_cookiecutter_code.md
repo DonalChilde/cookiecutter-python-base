@@ -39,10 +39,10 @@ issue link [#1](https://github.com/DonalChilde/cookiecutter-python-base/issues/1
 - Use scriv in the cookiecutter project.
 
   - Pull requests
-    - [#0](https://github.com/DonalChilde/cookiecutter-python-base/pull/0)
+    - [#90](https://github.com/DonalChilde/cookiecutter-python-base/pull/90)
 
   - closes
-    - [#0](https://github.com/DonalChilde/cookiecutter-python-base/issues/0)
+    - [#89](https://github.com/DonalChilde/cookiecutter-python-base/issues/89)
 
 <!--
 
