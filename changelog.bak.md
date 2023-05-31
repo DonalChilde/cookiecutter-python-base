@@ -1,16 +1,8 @@
 # Changelog
-<!-- markdownlint-disable MD024 -->
-<!-- changelog-start -->
 
-## [Unreleased](https://github.com/DonalChilde/cookiecutter-python-base/v0.0.1...refs/heads/develop)
-<!-- Dont forget to:
-    - Update the Unreleased compare version to latest release tag
-    - Update compare/_previous_version_tag_ 
-    - Delete <a></a> tag 
-    - Update issues and pull requests as needed.-->
+## [Unreleased](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/v0.0.1...refs/heads/master)
+<!-- Dont forget to update the Unreleased compare version to latest release tag -->
 <!-- Copy paste release notes below here -->
-<!-- scriv-insert-here -->
-
 ## [v0.0.1](https://github.com/DonalChilde/cookiecutter-python-base/compare/v0.0.0...v0.0.1)
 
 ### What's Changed in v0.0.1
@@ -63,5 +55,3 @@ This is the start of something....
 - Project Start
 
 <https://keepachangelog.com/en/1.0.0/>
-
-<!-- changelog-end -->

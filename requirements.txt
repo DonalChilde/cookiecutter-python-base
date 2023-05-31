@@ -4,3 +4,4 @@ isort
 pre-commit
 nox
 click
+scriv
