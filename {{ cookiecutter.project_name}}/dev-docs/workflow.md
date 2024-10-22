@@ -9,7 +9,7 @@
 ## Typical work flow
 
 - Make issue on github.
-- Make a branch for the issue.
+- Make a branch for the issue CHECK BRANCH SOURCE.
 - `scriv create` to make a changelog fragment.
 - Code to solve issue.
   - make sure tests, documentation, coverage, etc are passing
