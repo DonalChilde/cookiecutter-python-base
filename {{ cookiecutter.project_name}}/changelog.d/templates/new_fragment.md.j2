@@ -3,22 +3,19 @@ A new scriv changelog fragment.
 
 Uncomment the section that is right (remove the HTML comment wrapper).
 
-pull request link [#1](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/pull/1)
-issue link [#1](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues/1)
+pull request link [#_num_](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/pull/_num_)
+issue link [#_num_](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues/_num_)
 -->
 {% raw %}
 {% for cat in config.categories -%}
 <!--
 
 ### {{ cat }}
-
-- A bullet item for the {{ cat }} category.
 {% endraw %}
-    - Pull requests
-        - [#0](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/pull/0)
 
-    - closes
-        - [#0](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues/0)
+- __issue_or_PR_description__[#_num_](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/pull/_num_)
+  - closes
+    - __desc__[#_num_](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues/_num_)
 {% raw %}
 -->
 {% endfor -%}
