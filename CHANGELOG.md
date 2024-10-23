@@ -2,14 +2,52 @@
 <!-- markdownlint-disable MD024 -->
 <!-- changelog-start -->
 
-## [Unreleased](https://github.com/DonalChilde/cookiecutter-python-base/v0.0.1...refs/heads/dev)
+## [Unreleased](https://github.com/DonalChilde/cookiecutter-python-base/0.0.2...refs/heads/dev)
 <!-- Dont forget to:
     - Update the Unreleased compare version to latest release tag
-    - Update compare/_previous_version_tag_ 
-    - Delete <a></a> tag 
+    - Update compare/_previous_version_tag_
+    - Delete <a></a> tag
     - Update issues and pull requests as needed.-->
 <!-- Copy paste release notes below here -->
 <!-- scriv-insert-here -->
+
+## [0.0.2](https://github.com/DonalChilde/cookiecutter-python-base/compare/v0.0.1...0.0.2) —  2024-10-23
+
+### Whats Changed in 0.0.2
+
+An incremental update testing out some workflow changes, and changelog format.
+
+### Added
+
+- Add scriv cookiecutter project.
+
+  - Pull requests
+    - [#90](https://github.com/DonalChilde/cookiecutter-python-base/pull/90)
+
+  - closes
+    - [#89](https://github.com/DonalChilde/cookiecutter-python-base/issues/89)
+
+- Add and update the workflow dev doc
+- Add a pyproject.toml
+  - Add a src package so that version can be stored in __init__.py
+
+  - Pull requests
+    - [#93](https://github.com/DonalChilde/cookiecutter-python-base/pull/93)
+
+  - closes
+    - [#91](https://github.com/DonalChilde/cookiecutter-python-base/issues/91)
+    - [#81](https://github.com/DonalChilde/cookiecutter-python-base/issues/81)
+    - [#72](https://github.com/DonalChilde/cookiecutter-python-base/issues/72)
+
+### Changed
+
+- Use scriv to manage the changelog.
+
+  - Pull requests
+    - [#88](https://github.com/DonalChilde/cookiecutter-python-base/pull/88)
+
+  - closes
+    - [#87](https://github.com/DonalChilde/cookiecutter-python-base/issues/87)
 
 ## [v0.0.1](https://github.com/DonalChilde/cookiecutter-python-base/compare/v0.0.0...v0.0.1)
 
