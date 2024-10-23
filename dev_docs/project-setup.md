@@ -15,7 +15,7 @@ pyenv shell 3.13
 python3 -m venv ./.venv
 source ./.venv/bin/activate
 export PIP_REQUIRE_VIRTUALENV=true
-pip3 install -U pip, wheel
+pip3 install -U pip wheel
 
 ```
 
@@ -38,7 +38,7 @@ pyenv shell 3.13
 python3 -m venv ./.venv
 source ./.venv/bin/activate
 export PIP_REQUIRE_VIRTUALENV=true
-pip3 install -U pip, wheel
+pip3 install -U pip wheel
 # Install project dependencies
 pip3 install -e .[dev,lint,doc,vscode,testing]
 # Create the local git repo, and install git hooks
@@ -66,7 +66,7 @@ git checkout dev
 # Pick your python version using pyenv - optional
 pyenv shell 3.13
 
-python3 -m venv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip, wheel && pip3 install -e .[dev,lint,doc,vscode,testing]
+python3 -m venv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip wheel && pip3 install -e .[dev,lint,doc,vscode,testing]
 ```
 
 ```bash
@@ -75,7 +75,7 @@ python3 -m venv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIR
 # Pick your python version using pyenv - optional
 pyenv shell 3.13
 
-rm -rf ./.venv && python3 -m venv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip, wheel && pip3 install -e .[dev,lint,doc,vscode,testing]
+rm -rf ./.venv && python3 -m venv ./.venv && source ./.venv/bin/activate && export PIP_REQUIRE_VIRTUALENV=true && pip3 install -U pip wheel && pip3 install -e .[dev,lint,doc,vscode,testing]
 ```
 
 ```bash
