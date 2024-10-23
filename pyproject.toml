@@ -94,7 +94,7 @@ parallel = true
 
 [tool.scriv]
 # version = "literal: pyproject.toml: project.version"
-version = "literal: cookiecutter_python_base/__init__.py: __version__"
+version = "literal: src/cookiecutter_python_base/__init__.py: __version__"
 format = "md"
 md_header_level = "2"
 entry_title_template = "file: changelog.d/templates/entry_title_template.md.j2"
