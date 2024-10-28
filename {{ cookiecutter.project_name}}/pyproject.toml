@@ -28,7 +28,7 @@ dynamic = ["version", "description"]
 dependencies = ["click"]
 
 [project.scripts]
-{{ cookiecutter.project_name }} = "{{ cookiecutter.package_name }}.{{ cookiecutter.package_name }}_cli:main"
+{{ cookiecutter.project_name }} = "{{ cookiecutter.package_name }}.cli.main:main"
 
 [project.urls]
 Documentation = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}#readme"
