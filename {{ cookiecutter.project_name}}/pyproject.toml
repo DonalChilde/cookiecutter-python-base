@@ -19,7 +19,7 @@ authors = [
 ]
 name = "{{ cookiecutter.project_name }}"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
 dynamic = ["version", "description"]
 # https://chrisholdgraf.com/blog/2022/install-github-from-pyproject/
