@@ -25,15 +25,15 @@ issue link [#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issu
     - __desc__[#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issues/_num_)
 
 -->
-<!--
 
 ### Changed
 
 - __issue_or_PR_description__[#_num_](https://github.com/DonalChilde/cookiecutter-python-base/pull/_num_)
   - closes
-    - __desc__[#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issues/_num_)
+    - sphinx setup[#83](https://github.com/DonalChilde/cookiecutter-python-base/issues/83)
+    - use project CHANGELOG.md in docs[#68](https://github.com/DonalChilde/cookiecutter-python-base/issues/68)
+    - move cli in src[#106](https://github.com/DonalChilde/cookiecutter-python-base/issues/106)
 
--->
 <!--
 
 ### Deprecated
