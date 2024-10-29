@@ -1,7 +1,15 @@
 # how to setup sphinx docs
 
-- docs dir layout explaination
-- sphinx-quickstart copy paste
-- sphinx-quickstart edits
-- sphinx commands to update and view docs
-- links to primary sphinx documentation
+uses a split source/build layout, with an additional source/documentation directory to keep the source dir clean.
+
+```bash
+# After code changes, and
+# before each release at a minimum,
+# generate the api files for autodoc.
+sphinx-apidoc -f -o ./source/documentation/api-generated/ ../src/{{ cookiecutter.package_name }}/
+```
+
+```bash
+# run this from the project/docs directory to build docs
+sphinx-build -M html ./source ./build --fail-on-warning
+```
