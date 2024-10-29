@@ -16,7 +16,7 @@ name = "cookiecutter-python-base"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [{ name = "Chad Lowe" }, { email = "pfmsoft.dev@gmail.com" }]
+authors = [{ name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" }]
 dynamic = ["version", "description"]
 dependencies = ["cookiecutter"]
 
