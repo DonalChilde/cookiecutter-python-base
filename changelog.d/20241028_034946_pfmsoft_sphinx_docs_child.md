@@ -28,7 +28,7 @@ issue link [#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issu
 
 ### Changed
 
-- __issue_or_PR_description__[#_num_](https://github.com/DonalChilde/cookiecutter-python-base/pull/_num_)
+- A few small repairs[#108](https://github.com/DonalChilde/cookiecutter-python-base/pull/108)
   - closes
     - sphinx setup[#83](https://github.com/DonalChilde/cookiecutter-python-base/issues/83)
     - use project CHANGELOG.md in docs[#68](https://github.com/DonalChilde/cookiecutter-python-base/issues/68)
