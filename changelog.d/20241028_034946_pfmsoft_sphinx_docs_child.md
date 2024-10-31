@@ -38,6 +38,7 @@ issue link [#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issu
     - Change cookie child dependency to Typer[#109](https://github.com/DonalChilde/cookiecutter-python-base/issues/109)
     - Edit release workflow version numbers[#102](https://github.com/DonalChilde/cookiecutter-python-base/issues/102)
     - Update github actions test runner[#99](https://github.com/DonalChilde/cookiecutter-python-base/issues/99)
+    - add mark slow tests[#86](https://github.com/DonalChilde/cookiecutter-python-base/issues/86)
 
 <!--
 
