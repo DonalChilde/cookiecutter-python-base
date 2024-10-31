@@ -37,6 +37,7 @@ issue link [#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issu
     - add example of github dependency to pyproject.toml[#103](https://github.com/DonalChilde/cookiecutter-python-base/issues/103)
     - Change cookie child dependency to Typer[#109](https://github.com/DonalChilde/cookiecutter-python-base/issues/109)
     - Edit release workflow version numbers[#102](https://github.com/DonalChilde/cookiecutter-python-base/issues/102)
+    - Update github actions test runner[#99](https://github.com/DonalChilde/cookiecutter-python-base/issues/99)
 
 <!--
 
