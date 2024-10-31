@@ -36,6 +36,7 @@ issue link [#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issu
     - add src pytest config option to pyproject.toml[#104](https://github.com/DonalChilde/cookiecutter-python-base/issues/104)
     - add example of github dependency to pyproject.toml[#103](https://github.com/DonalChilde/cookiecutter-python-base/issues/103)
     - Change cookie child dependency to Typer[#109](https://github.com/DonalChilde/cookiecutter-python-base/issues/109)
+    - Edit release workflow version numbers[#102](https://github.com/DonalChilde/cookiecutter-python-base/issues/102)
 
 <!--
 
