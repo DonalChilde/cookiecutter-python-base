@@ -10,3 +10,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main(prog_name="{{cookiecutter.project_name}}")  # pragma: no cover
+    

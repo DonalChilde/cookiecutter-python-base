@@ -1,6 +1,6 @@
 # Changelog
 <!-- markdownlint-disable MD024 -->
-<!-- changelog-start -->
+<!-- changelog-begin -->
 
 ## [Unreleased](<https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/0.0.0...refs/heads/dev>)
 <!-- Dont forget to:
