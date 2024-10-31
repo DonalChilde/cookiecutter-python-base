@@ -33,6 +33,8 @@ issue link [#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issu
     - sphinx setup[#83](https://github.com/DonalChilde/cookiecutter-python-base/issues/83)
     - use project CHANGELOG.md in docs[#68](https://github.com/DonalChilde/cookiecutter-python-base/issues/68)
     - move cli in src[#106](https://github.com/DonalChilde/cookiecutter-python-base/issues/106)
+    - add src pytest config option to pyproject.toml[#104](https://github.com/DonalChilde/cookiecutter-python-base/issues/104)
+    - add example of github dependency to pyproject.toml[#103](https://github.com/DonalChilde/cookiecutter-python-base/issues/103)
 
 <!--
 
