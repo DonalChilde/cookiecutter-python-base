@@ -3,13 +3,6 @@ from pathlib import Path
 import pytest
 from typer.testing import CliRunner
 
-
-@pytest.fixture
-def runner() -> CliRunner:
-    """Fixture for invoking command-line interfaces."""
-    return CliRunner()
-
-
 # Add an option to mark slow tests, so that they don't run every time.
 
 def pytest_addoption(parser):

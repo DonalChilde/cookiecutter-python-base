@@ -28,7 +28,7 @@ dynamic = ["version", "description"]
 dependencies = ["typer"]
 
 [project.scripts]
-{{ cookiecutter.project_name }} = "{{ cookiecutter.package_name }}.cli.main:main"
+{{ cookiecutter.project_name }}_typer = "{{ cookiecutter.package_name }}.cli.main_typer:app"
 
 [project.urls]
 Documentation = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}#readme"
@@ -60,7 +60,7 @@ doc = [
     "sphinx-autodoc-typehints",
     "sphinx_rtd_theme",
     "myst-parser",
-    "sphinx-click",
+    "sphinxcontrib-typer",
 ]
 vscode = ["esbonio", "rst2html", "rstcheck"]
 testing = ["pytest", "coverage[toml]", "pytest-cov"]
