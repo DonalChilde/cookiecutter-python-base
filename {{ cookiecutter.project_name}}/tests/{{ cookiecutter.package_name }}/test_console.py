@@ -1,7 +1,6 @@
 """Test cases for the console module."""
 import pytest
 from click.testing import CliRunner
-
 from {{cookiecutter.package_name}} import {{ cookiecutter.package_name }}_cli
 
 

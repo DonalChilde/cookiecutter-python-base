@@ -15,18 +15,21 @@ import sys
 
 # loading project metadata from the pyproject.toml file
 # requires python >=3.11
-import tomllib 
+import tomllib
 
 with open("../../pyproject.toml","rb") as f:
     toml_data = tomllib.load(f)
 
 # make sure that the src dir is on the path to support autodoc, version, etc
 sys.path.insert(0, os.path.abspath("../../src"))
-from {{ cookiecutter.package_name }} import __version__, __release__ # pylint: disable=wrong-import-position
+from {{cookiecutter.package_name}} import (  # pylint: disable=wrong-import-position
+    __release__,
+    __version__,
+)
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-project = toml_data["project"]["name"] 
+project = toml_data["project"]["name"]
 author = ",".join(
   [author["name"] for author in toml_data["project"]["authors"]]
 )

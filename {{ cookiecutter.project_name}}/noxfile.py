@@ -1,7 +1,8 @@
-import nox
 import os
 import shutil
 from pathlib import Path
+
+import nox
 
 # package = "{{cookiecutter.package_name}}"
 python_versions = ["3.10", "3.9", "3.8", "3.7"]
