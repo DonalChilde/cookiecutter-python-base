@@ -32,7 +32,6 @@ issue link [#_num_](https://github.com/DonalChilde/cookiecutter-python-base/issu
   - closes
     - sphinx conf.py source_suffix[#111](https://github.com/DonalChilde/cookiecutter-python-base/issues/111)
     - fix cli testing[#110](https://github.com/DonalChilde/cookiecutter-python-base/issues/110)
-    - sphinx conf.py source_suffix[#111](https://github.com/DonalChilde/cookiecutter-python-base/issues/111)
 
 <!--
 
