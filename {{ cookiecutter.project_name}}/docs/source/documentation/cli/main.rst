@@ -1,3 +1,6 @@
-.. click:: {{cookiecutter.package_name}}.cli.main:main
+.. typer:: {{cookiecutter.package_name}}.cli.main_typer:app
    :prog: {{cookiecutter.project_name}}
-   :nested: full
+   :width: 70
+   :show-nested:
+   :make-sections:
+   
