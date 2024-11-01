@@ -66,9 +66,13 @@ templates_path = ["_templates"]
 intersphinx_mapping = {"python": ("https://docs.python.org/3", None)}
 
 # The suffix(es) of source filenames.
-# You can specify multiple suffix as a list of string:
+# You can specify multiple suffixes as a dict:
 #
-source_suffix = [".rst", ".md"]
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "sphinx"
