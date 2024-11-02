@@ -14,9 +14,9 @@ classifiers = [
 ]
 name = "cookiecutter-python-base"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
-authors = [{ name = "Chad Lowe" }, { email = "pfmsoft.dev@gmail.com" }]
+authors = [{ name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" }]
 dynamic = ["version", "description"]
 dependencies = ["cookiecutter"]
 
@@ -65,7 +65,7 @@ src_paths = ["src", "test"]
 
 [tool.black]
 line-length = 88
-target-version = ['py310']
+target-version = ['py313']
 
 # https://pylint.pycqa.org/en/latest/user_guide/usage/run.html#command-line-options
 # https://pylint.pycqa.org/en/latest/user_guide/configuration/all-options.html#standard-checkers
@@ -86,6 +86,8 @@ target-version = ['py310']
 # for black compatability
 max-line-length = "95"
 
+[tool.pytest.ini_options]
+pythonpath = "src"
 
 [tool.coverage.run]
 branch = true

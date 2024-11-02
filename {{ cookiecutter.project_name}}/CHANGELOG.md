@@ -1,12 +1,12 @@
 # Changelog
 <!-- markdownlint-disable MD024 -->
-<!-- changelog-start -->
+<!-- changelog-begin -->
 
-## [Unreleased](<https://github.com/{{> cookiecutter.github_user }}/{{ cookiecutter.project_name }}/0.0.0...refs/heads/dev)
+## [Unreleased](<https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/compare/0.0.0...dev>)
 <!-- Dont forget to:
     - Update the Unreleased compare version to latest release tag
-    - Update compare/_previous_version_tag_ 
-    - Delete <a></a> tag 
+    - Update compare/_previous_version_tag_
+    - Delete <a></a> tag
     - Update issues and pull requests as needed.-->
 <!-- Copy paste release notes below here -->
 <!-- scriv-insert-here -->

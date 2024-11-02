@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
+requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
@@ -7,31 +7,32 @@ keywords = {{ cookiecutter.keywords.split() }}
 classifiers = [
     "{{ cookiecutter.development_status }}",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 {% if cookiecutter.license == 'MIT' %}
     "License :: OSI Approved :: MIT License",
 {% endif %}
 ]
+authors = [
+    { name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.email }}" },
+]
 name = "{{ cookiecutter.project_name }}"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
-authors = [
-    { name = "{{ cookiecutter.author }}" },
-    { email = "{{ cookiecutter.email }}" },
-]
 dynamic = ["version", "description"]
-dependencies = ["click"]
+# https://chrisholdgraf.com/blog/2022/install-github-from-pyproject/
+# https://peps.python.org/pep-0508/#examples
+# "pfmsoft-snippets@git+https://github.com/donalchilde/pfmsoft-snippets@0.0.1"
+dependencies = ["typer"]
 
 [project.scripts]
-{{ cookiecutter.project_name }} = "{{ cookiecutter.package_name }}.{{ cookiecutter.package_name }}_cli:main"
+{{ cookiecutter.project_name }}_typer = "{{ cookiecutter.package_name }}.cli.main_typer:app"
 
 [project.urls]
 Documentation = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}#readme"
-Documentation_rtd = "https://{{ cookiecutter.project_name }}.readthedocs.io"
+# Documentation_rtd = "https://{{ cookiecutter.project_name }}.readthedocs.io"
 Issues = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/issues"
 Source = "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}"
 
@@ -59,7 +60,7 @@ doc = [
     "sphinx-autodoc-typehints",
     "sphinx_rtd_theme",
     "myst-parser",
-    "sphinx-click",
+    "sphinxcontrib-typer",
 ]
 vscode = ["esbonio", "rst2html", "rstcheck"]
 testing = ["pytest", "coverage[toml]", "pytest-cov"]
@@ -71,7 +72,7 @@ src_paths = ["src", "test"]
 
 [tool.black]
 line-length = 88
-target-version = ['py310']
+target-version = ['py313']
 
 # https://pylint.pycqa.org/en/latest/user_guide/usage/run.html#command-line-options
 # https://pylint.pycqa.org/en/latest/user_guide/configuration/all-options.html#standard-checkers
@@ -92,6 +93,8 @@ target-version = ['py310']
 # for black compatability
 max-line-length = "95"
 
+[tool.pytest.ini_options]
+pythonpath = "src"
 
 [tool.coverage.run]
 branch = true
@@ -99,7 +102,8 @@ parallel = true
 # omit = [""]
 
 [tool.scriv]
-version = "literal: pyproject.toml: project.version"
+#version = "literal: pyproject.toml: project.version"
+version = "literal: src/{{ cookiecutter.package_name }}/__init__.py: __version__"
 format = "md"
 md_header_level = "2"
 entry_title_template = "file: changelog.d/templates/entry_title_template.md.j2"

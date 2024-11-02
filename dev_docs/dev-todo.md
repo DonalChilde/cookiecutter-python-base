@@ -1,3 +1,4 @@
+<!-- A place for quick dev todos. Will usually get moved to github issues after some thought. -->
 # Dev TODOs
 
 - convert docs to markdown, with myst parser.
