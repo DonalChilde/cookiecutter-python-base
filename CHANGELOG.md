@@ -2,7 +2,7 @@
 <!-- markdownlint-disable MD024 -->
 <!-- changelog-start -->
 
-## [Unreleased](https://github.com/DonalChilde/cookiecutter-python-base/compare/0.0.2...dev)
+## [Unreleased](https://github.com/DonalChilde/cookiecutter-python-base/compare/0.0.3...dev)
 <!-- Dont forget to:
     - Update the Unreleased compare version to latest release tag
     - Update compare/_previous_version_tag_
@@ -10,6 +10,51 @@
     - Update issues and pull requests as needed.-->
 <!-- Copy paste release notes below here -->
 <!-- scriv-insert-here -->
+
+## [0.0.3](https://github.com/DonalChilde/cookiecutter-python-base/compare/0.0.2...0.0.3) —  2024-11-02
+
+### Whats Changed in 0.0.3
+
+In this release, I added a functional example of a Typer cli app with tests, and working sphinx documentation. Also, some basic nox sessions, and project setup convenience scripts.
+
+### Added
+
+- Update dev docs and pyproject.toml[#94](https://github.com/DonalChilde/cookiecutter-python-base/pull/94)
+  - closes
+    - update pyproject.toml[#92](https://github.com/DonalChilde/cookiecutter-python-base/issues/92)
+    - Document the development workflow[#21](https://github.com/DonalChilde/cookiecutter-python-base/issues/21)
+
+- added some convenience scripts
+  - closes
+    - convenient shell scripts[#43](https://github.com/DonalChilde/cookiecutter-python-base/issues/43)
+
+- Add a typer cli example[#112](https://github.com/DonalChilde/cookiecutter-python-base/pull/112)
+  - closes
+    - sphinx conf.py source_suffix[#111](https://github.com/DonalChilde/cookiecutter-python-base/issues/111)
+    - fix cli testing[#110](https://github.com/DonalChilde/cookiecutter-python-base/issues/110)
+
+### Changed
+
+- Update project setup dev doc
+  - closes
+    - dev setup doc[#80](https://github.com/DonalChilde/cookiecutter-python-base/issues/80)
+
+- A few small repairs[#108](https://github.com/DonalChilde/cookiecutter-python-base/pull/108)
+  - closes
+    - sphinx setup[#83](https://github.com/DonalChilde/cookiecutter-python-base/issues/83)
+    - use project CHANGELOG.md in docs[#68](https://github.com/DonalChilde/cookiecutter-python-base/issues/68)
+    - move cli in src[#106](https://github.com/DonalChilde/cookiecutter-python-base/issues/106)
+    - add src pytest config option to pyproject.toml[#104](https://github.com/DonalChilde/cookiecutter-python-base/issues/104)
+    - add example of github dependency to pyproject.toml[#103](https://github.com/DonalChilde/cookiecutter-python-base/issues/103)
+    - Change cookie child dependency to Typer[#109](https://github.com/DonalChilde/cookiecutter-python-base/issues/109)
+    - Edit release workflow version numbers[#102](https://github.com/DonalChilde/cookiecutter-python-base/issues/102)
+    - Update github actions test runner[#99](https://github.com/DonalChilde/cookiecutter-python-base/issues/99)
+    - add mark slow tests[#86](https://github.com/DonalChilde/cookiecutter-python-base/issues/86)
+
+### Fixed
+
+- fixed incorrect github compare link address.
+- fixed github action for testing.
 
 ## [0.0.2](https://github.com/DonalChilde/cookiecutter-python-base/compare/v0.0.1...0.0.2) —  2024-10-23
 
