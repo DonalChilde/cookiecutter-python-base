@@ -5,7 +5,7 @@
 # After code changes, and
 # before each release at a minimum,
 # generate the api files for autodoc.
-sphinx-apidoc -f -o ./docs/source/documentation/api-generated/ ./src/{{ cookiecutter.package_name }}/
+./.venv/bin/sphinx-apidoc -f -o ./docs/source/documentation/api-generated/ ./src/{{ cookiecutter.package_name }}/
 
 # build the docs
-sphinx-build -M html ./docs/source ./docs/build --fail-on-warning
+./.venv/bin/sphinx-build -M html ./docs/source ./docs/build --fail-on-warning

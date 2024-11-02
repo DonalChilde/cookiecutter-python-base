@@ -45,9 +45,12 @@ pip3 install -e .[dev,lint,doc,vscode,testing]
 git init --initial-branch=main
 pre-commit install
 pre-commit autoupdate
+pre-commit run --all-files
 
-black ./src ./tests .
-isort ./src ./tests .
+# run black and isort if these are not precommit hooks
+# black ./src ./tests .
+# isort ./src ./tests .
+
 # Make initial commit. You may have to repeat the add and commit commands if git hooks modify files.
 git add .
 git commit -m "initial commit"
