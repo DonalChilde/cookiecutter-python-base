@@ -1,4 +1,4 @@
-# how to setup sphinx docs
+# How to setup sphinx docs
 
 uses a split source/build layout, with an additional source/documentation directory to keep the source dir clean.
 
