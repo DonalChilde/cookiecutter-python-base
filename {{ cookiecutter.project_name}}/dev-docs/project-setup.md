@@ -42,9 +42,12 @@ pip3 install -U pip wheel
 # Install project dependencies
 pip3 install -e .[dev,lint,doc,vscode,testing]
 # Create the local git repo, and install git hooks
-git init
+git init --initial-branch=main
 pre-commit install
 pre-commit autoupdate
+
+black ./src ./tests .
+isort ./src ./tests .
 # Make initial commit. You may have to repeat the add and commit commands if git hooks modify files.
 git add .
 git commit -m "initial commit"

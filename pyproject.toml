@@ -65,7 +65,7 @@ src_paths = ["src", "test"]
 
 [tool.black]
 line-length = 88
-target-version = ['py310']
+target-version = ['py313']
 
 # https://pylint.pycqa.org/en/latest/user_guide/usage/run.html#command-line-options
 # https://pylint.pycqa.org/en/latest/user_guide/configuration/all-options.html#standard-checkers

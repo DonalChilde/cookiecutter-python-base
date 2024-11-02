@@ -5,6 +5,7 @@ from typer.testing import CliRunner
 
 # Add an option to mark slow tests, so that they don't run every time.
 
+
 def pytest_addoption(parser):
     # https://docs.pytest.org/en/stable/example/simple.html#control-skipping-of-tests-according-to-command-line-option
     # conftest.py must be in the root test package.
