@@ -1,3 +1,18 @@
+"""Nox sessions file.
+
+Example:
+```bash
+# To get a list of available sessions:
+nox --list
+
+# To run a particular session:
+nox -s lint
+
+# To run tagged sessions:
+nox -t fix
+```
+"""
+
 import os
 import shutil
 from pathlib import Path
@@ -13,25 +28,22 @@ nox.options.sessions = []
 
 
 @nox.session(tags=["fix"])
-def black(session: nox.Session) -> None:
-    """
-    run black on code
-    """
-    session.install("black")
-    session.run("black", "src", "tests")
+def lint(session: nox.Session) -> None:
+    """Lint code with ruff."""
+    session.install("ruff")
+    session.run("ruff", "check", "--fix", "src", "tests")
 
 
 @nox.session(tags=["fix"])
-def isort(session: nox.Session) -> None:
-    """
-    run isort on code
-    """
-    session.install("isort")
-    session.run("isort", "src", "tests")
+def format(session: nox.Session) -> None:
+    """Format code with ruff."""
+    session.install("ruff")
+    session.run("ruff", "format", "src", "tests")
 
 
 @nox.session()
 def tests(session: nox.Session):
+    """Run pytest."""
     session.install(".[testing]")
     session.run("pytest")
 
@@ -39,21 +51,18 @@ def tests(session: nox.Session):
 # It's a good idea to keep your dev session out of the default list
 # so it's not run twice accidentally
 @nox.session(default=False)
-def dev(session: nox.Session) -> None:
-    """
-    Set up a python development environment for the project at ".venv".
-    """
-
+def venv_reset(session: nox.Session) -> None:
+    """Set up a python development environment for the project at ".venv"."""
     venv_dir = Path(".venv")
     if venv_dir.exists():
         shutil.rmtree(venv_dir)
 
-    session.run("venv", ".venv", silent=True)
+    session.run("venv", "./.venv", silent=True)
     session.run(".venv/bin/pip", "install", "-U", "pip", "wheel")
 
     # Use the venv's interpreter to install the project along with
     # all it's dev dependencies, this ensures it's installed in the right way
-    session.run(".venv/bin/pip", "install", "-e", ".[dev,lint,doc,vscode,testing]")
+    session.run(".venv/bin/pip", "install", "-e", ".[dev,doc,vscode,testing]")
 
 
 @nox.session(name="docs-build")
@@ -85,3 +94,8 @@ def docs_serve(session: nox.Session) -> None:
         shutil.rmtree(build_dir)
 
     session.run("sphinx-autobuild", *args)
+
+
+@nox.session(name="run-pre-commit-hooks")
+def run_hooks(session: nox.Session):
+    """"""
