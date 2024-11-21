@@ -1,7 +1,6 @@
 cookiecutter
-black
-isort
 pre-commit
 nox
-click
+typer
 scriv
+ruff
