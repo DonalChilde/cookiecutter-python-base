@@ -1,24 +1,29 @@
 # {{ cookiecutter.friendly_name }}
 
 <!-- badges-begin -->
-[![PyPI](https://img.shields.io/pypi/v/{{cookiecutter.project_name}}.svg)][pypi status]
-[![Status](https://img.shields.io/pypi/status/{{cookiecutter.project_name}}.svg)][pypi status]
-[![Python Version](https://img.shields.io/pypi/pyversions/{{cookiecutter.project_name}})][pypi status]
-[![License](https://img.shields.io/pypi/l/{{cookiecutter.project_name}})][license]
 
-[![Read the documentation at https://{{cookiecutter.project_name}}.readthedocs.io/](https://img.shields.io/readthedocs/{{cookiecutter.project_name}}/latest.svg?label=Read%20the%20Docs)][read the docs]
-[![Tests](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/workflows/Tests/badge.svg)][tests]
-[![Codecov](https://codecov.io/gh/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/branch/main/graph/badge.svg)][codecov]
+<!-- pypi -->
+[![PyPI](https://img.shields.io/pypi/v/{{ cookiecutter.project_name }}.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/{{ cookiecutter.project_name }}.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/{{ cookiecutter.project_name }})][pypi status]
+[![License](https://img.shields.io/pypi/l/{{ cookiecutter.project_name }})][license]
 
+<!-- rtd -->
+[![Documentation](https://img.shields.io/readthedocs/{{ cookiecutter.project_name }}/latest.svg?label=Read%20the%20Docs)][read the docs]
+
+<!-- CI testing -->
+[![CI - main](https://github.com/{{ cookiecutter.github_user }}/{{cookiecutter.project_name}}/actions/workflows/pytest-main.yaml/badge.svg?branch=main)][tests]
+[![CI - dev](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/actions/workflows/pytest-dev.yaml/badge.svg?branch=dev)][tests]
+
+<!-- Tools Used -->
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
-[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)][ruff]
 
-[pypi status]: https://pypi.org/project/{{cookiecutter.project_name}}/
-[read the docs]: https://{{cookiecutter.project_name}}.readthedocs.io/
-[tests]: https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/actions?workflow=Tests
-[codecov]: https://app.codecov.io/gh/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}
-[pre-commit]: https://github.com/pre-commit/pre-commit
-[black]: https://github.com/psf/black
+[pypi status]: <https://pypi.org/project/{{ cookiecutter.project_name }}/>
+[read the docs]: <https://{{ cookiecutter.project_name }}.readthedocs.io/>
+[tests]: <https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}/actions>
+[pre-commit]: <https://github.com/pre-commit/pre-commit>
+[ruff]: <https://github.com/astral-sh/ruff>
 
 <!-- badges-end -->
 
@@ -32,10 +37,17 @@
 
 ## Quickstart
 
-You can install _{{cookiecutter.friendly_name}}_ via [pip] from [PyPI]:
+You can install _{{ cookiecutter.friendly_name }}_ via [pip] from [PyPI]:
 
 ```console
-pip install {{cookiecutter.project_name}}
+pip install {{ cookiecutter.project_name }}
+```
+
+You can also pip install from github:
+
+```console
+# You should replace 0.0.1 with the desired tagged version or branch name, eg. dev or main
+"pip install {{ cookiecutter.project_name }}@git+http://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_name }}@0.0.1"
 ```
 
 ## Usage
