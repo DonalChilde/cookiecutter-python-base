@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Run from the project directory
-# this is only ment to be run on a new project
+# this is only meant to be run on a new project
 
 # Create the local git repo, and install git hooks
 git init --initial-branch=main
@@ -10,9 +10,10 @@ git init --initial-branch=main
 ./.venv/bin/pre-commit run --all-files
 
 # run these before the git hooks to try to avoid
-# having the first commit fail
-# ./.venv/bin/black ./src ./tests .
-# ./.venv/bin/isort ./src ./tests .
+# having the first commit fail, or just run script
+# a second time.
+# ./.venv/bin/ruff check --fix ./src ./tests .
+# ./.venv/bin/ruff format ./src ./tests .
 
 # Make initial commit. You may have to repeat the add and commit commands if git hooks modify files.
 git add .
