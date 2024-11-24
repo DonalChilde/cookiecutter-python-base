@@ -96,6 +96,7 @@ def docs_serve(session: nox.Session) -> None:
     session.run("sphinx-autobuild", *args)
 
 
-@nox.session(name="run-pre-commit-hooks")
+@nox.session(name="run-hooks")
 def run_hooks(session: nox.Session):
-    """"""
+    """Run the pre-commit hooks."""
+    session.run("./.venv/bin/pre-commit", "run", "--all-files")
