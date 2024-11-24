@@ -69,6 +69,7 @@ testing = ["pytest", "coverage[toml]", "pytest-cov"]
 
 [tool.ruff.lint]
 select = ["B", "UP", "D", "DOC"]
+# non-imperative-mood (D401) 
 exclude = ["D401"]
 
 [tool.ruff.lint.pydocstyle]
