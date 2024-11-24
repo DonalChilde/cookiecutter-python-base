@@ -9,6 +9,9 @@ import pytest
 logger = logging.getLogger(__name__)
 
 
+########################################################################
+# Add an option to mark slow tests, so that they don't run every time. #
+########################################################################
 def pytest_addoption(parser: pytest.Parser):
     """Add a command line option to pytest."""
     # https://docs.pytest.org/en/stable/example/simple.html#control-skipping-of-tests-according-to-command-line-option
