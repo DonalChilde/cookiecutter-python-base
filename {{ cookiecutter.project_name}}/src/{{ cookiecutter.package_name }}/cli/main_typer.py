@@ -33,7 +33,7 @@ def default_options(
     ctx.obj["START_TIME"] = perf_counter_ns()
     ctx.obj["DEBUG"] = debug
     ctx.obj["VERBOSITY"] = verbosity
-    if ctx.obj["VERBOSITY"] > 3:
+    if ctx.obj["VERBOSITY"] >= 3:
         typer.echo(f"Verbosity: {ctx.obj["VERBOSITY"]}")
         typer.echo(f"Debug: {ctx.obj["DEBUG"]}")
         dt = datetime.datetime.now(datetime.UTC)
