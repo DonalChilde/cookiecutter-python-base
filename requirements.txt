@@ -1,7 +1,0 @@
-cookiecutter
-black
-isort
-pre-commit
-nox
-click
-scriv
