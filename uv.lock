@@ -247,6 +247,7 @@ version = "0.0.3"
 source = { editable = "." }
 dependencies = [
     { name = "cookiecutter" },
+    { name = "typer" },
 ]
 
 [package.dev-dependencies]
@@ -276,7 +277,10 @@ vscode-doc = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "cookiecutter" }]
+requires-dist = [
+    { name = "cookiecutter" },
+    { name = "typer" },
+]
 
 [package.metadata.requires-dev]
 dev = [

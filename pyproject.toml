@@ -18,7 +18,7 @@ requires-python = ">=3.11"
 license = { file = "LICENSE" }
 authors = [{ name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" }]
 dynamic = ["version", "description"]
-dependencies = ["cookiecutter"]
+dependencies = ["cookiecutter", "typer"]
 
 #[project.scripts]
 
